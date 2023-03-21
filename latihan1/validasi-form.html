@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function validasi() {
+        isAlphabet(
+          document.getElementById('nama'),
+          'Nama \
+            harus alphabet semua'
+        );
+        isAlpanumeric(
+          document.getElementById('alamat'),
+          'Alamat \
+            hanya boleh alfanumeric'
+        );
+        isNumber(
+          document.getElementById('telepon'),
+          'Telepon harus angka \
+             semua'
+        );
+        isAlpanumeric(
+          document.getElementById('password'),
+          'Alamat \
+            hanya boleh alfanumeric'
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <form action="">
+      <pre>
+            silahkan masukkan data pribadi anda :
+            Nama :
+            <input type="text" name="txtnama" id="nama">
+            Alamat :
+            <input type="text" name="txtalamat" id="alamat" size="50">
+            No Telepon :
+            <input type="number" name="txttelepon" id="telepon" size="10">
+            Masukkan Password anda :
+            <input type="password" name="txtpassword" id="password" maxlength="6">
+            <hr>
+            <input type="submit" onclick="validasi()" value="Kirim!">
+            <input type="reset" value="Hapus!">
+
+        </pre>
+    </form>
+  </body>
+</html>
