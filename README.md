@@ -17,6 +17,8 @@ PHP awalnya merupakan kepedndekan dari personal home page(situs personal), PHP d
 
 CGI = (Common Gateway Interface) adalah suatu mekanisme yang berjalan di web server, bertugas melayani komunikasi dua arah antara Web Server dan Web Browser
 
+DOM = Domain Object Model = adalah untuk memodifikasi html di dalam javascript
+
 
 
 
