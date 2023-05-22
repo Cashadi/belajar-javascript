@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>selamat datang di alat hitung kata</h1>
+    <form action="" name="wordcount">
+      <textarea name="wordcount2" cols="38" rows="12" wrap="virtual"></textarea>
+      <br />
+      <input type="button" value="hitungKata" onclick="hitung()" />
+      <input type="text" name="wordcount3" size="20" />
+    </form>
+
+    <script>
+      function hitung() {
+        var formContent = document.wordcount.wordcount2.value;
+        isi = formContent.split('');
+        document.wordcount.wordcount3.value = isi.length;
+      }
+    </script>
+  </body>
+</html>
