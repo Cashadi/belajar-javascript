@@ -6,5 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <input type="text" id="timer" size="12" />
+    <input type="button" value="start" onclick="count()" />
+
+    <script>
+      var c = 0;
+      document.getElementById('timer').value = '';
+      function count() {
+        document.getElementById('timer').value = c;
+        c = c + 1;
+        setTimeout('count()', 1000);
+      }
+    </script>
+  </body>
 </html>
