@@ -2,19 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script>
-      function buka() {
-        var x = window.open('open.html', 'newWindow', 'height=300,width=300');
-      }
-    </script>
   </head>
   <body>
-    <form action="" name="formulir">
-      <input type="button" value="buka window" name="submit1" onclick="buka();" />
-      <input type="text" name="kotak" id="kotak" />
-    </form>
+    <h3>Lihatlah Penjumlahan ini!</h3>
+    <h1 id="penjumlahan"></h1>
+
+    <script>
+      document.getElementById('penjumlahan').innerHTML = 5 + 5;
+    </script>
   </body>
 </html>
